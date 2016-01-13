@@ -1,23 +1,25 @@
 # ScrivitoFacebookWidget
 
-A Widget for scrivito to insert a Facebok stream. You can add a page by its url, a video or a single post.
+A Scrivito widget that inserts a Facebook stream into a page. You can add a Facebook page by its URL, or a video or a single post by its ID.
 
 ## Installation
 
-Add to your gemfile
+Add this line to your application's Gemfile:
 
     gem 'scrivito_facebook_widget'
 
-Add to your Javascript mainfest
+Add this line to your application stylesheet manifest:
 
     //= require scrivito_facebook_widget
 
-## Facebook App id
+## Facebook App ID
 
-Normaly you will see a warning, that no app id is set. This is no problem as long as you do not want to use private content on you webpage.
+When using this widget, a warning is displayed in the browser console, saying that no app ID is set. This is no problem as long as you are not using private content from Facebook on your web page.
 
-Iy you want to remove this warning, you have to set a global variable in javascript at the beginning of you document.
+To remove this warning, just set a global JavaScript variable at the top of the page:
 
 ```javascript
 var fbAppId = yourAppId
 ```
+
+The App ID can be generated using Facebook's developer tools.
