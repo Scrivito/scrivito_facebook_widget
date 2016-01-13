@@ -1,25 +1,32 @@
 <%= scrivito_details_for 'Type' do %>
   <%= scrivito_toggle_button_editor widget, :type %>
 <% end %>
+
 <%= scrivito_details_for 'Url' do %>
   <%= scrivito_tag :div, widget, :url %>
 <% end %>
+
 <%= scrivito_details_for 'More Options for type page' do %>
   <%= scrivito_details_for 'Max Width (max: 500; min: 180)' do %>
     <%= scrivito_tag :div, widget, :width %>
   <% end %>
+
   <%= scrivito_details_for 'Height (min: 70)' do %>
     <%= scrivito_tag :div, widget, :height %>
   <% end %>
+
   <%= scrivito_details_for 'Hide cover' do %>
     <%= scrivito_toggle_button_editor widget, :hide_cover %>
   <% end %>
+
   <%= scrivito_details_for 'Show faces' do %>
-    <%= scrivito_toggle_button_editor widget, :hide_cover %>
+    <%= scrivito_toggle_button_editor widget, :show_facepile %>
   <% end %>
+
   <%= scrivito_details_for 'Show latest posts' do %>
     <%= scrivito_toggle_button_editor widget, :show_posts %>
   <% end %>
+
   <%= scrivito_details_for 'Hide cta' do %>
     <%= scrivito_toggle_button_editor widget, :hide_cta %>
   <% end %>
