@@ -1,33 +1,31 @@
-<%= scrivito_details_for 'Type' do %>
-  <%= scrivito_toggle_button_editor widget, :type %>
+<%= scrivito_details_for t('scrivito_facebook_widget.details.type', default: 'Type') do %>
+  <%= scrivito_tag :div, widget, :type %>
 <% end %>
 
-<%= scrivito_details_for 'Url' do %>
+<%= scrivito_details_for t('scrivito_facebook_widget.details.type', default: 'Url') do %>
   <%= scrivito_tag :div, widget, :url %>
 <% end %>
 
-<%= scrivito_details_for 'More Options for type page' do %>
-  <%= scrivito_details_for 'Max Width (max: 500; min: 180)' do %>
-    <%= scrivito_tag :div, widget, :width %>
-  <% end %>
+<%= scrivito_details_for t('scrivito_facebook_widget.details.width', default: 'Max Width') do %>
+  <%= scrivito_tag :div, widget, :width, {data: {scrivito_editors_max: 500, scrivito_editors_min: 180}}, editor: :slider %>
+<% end %>
 
-  <%= scrivito_details_for 'Height (min: 70)' do %>
-    <%= scrivito_tag :div, widget, :height %>
-  <% end %>
+<%= scrivito_details_for t('scrivito_facebook_widget.details.height', default: 'Height') do %>
+  <%= scrivito_tag :div, widget, :height, {data: {scrivito_editors_max: 1000, scrivito_editors_min: 70}}, editor: :slider %>
+<% end %>
 
-  <%= scrivito_details_for 'Hide cover' do %>
-    <%= scrivito_toggle_button_editor widget, :hide_cover %>
-  <% end %>
+<%= scrivito_details_for t('scrivito_facebook_widget.details.hide_cover', default: 'Hide Cover') do %>
+  <%= scrivito_tag :div, widget, :hide_cover %>
+<% end %>
 
-  <%= scrivito_details_for 'Show faces' do %>
-    <%= scrivito_toggle_button_editor widget, :show_facepile %>
-  <% end %>
+<%= scrivito_details_for t('scrivito_facebook_widget.details.show_facepile', default: 'Show Facepile') do %>
+  <%= scrivito_tag :div, widget, :show_facepile %>
+<% end %>
 
-  <%= scrivito_details_for 'Show latest posts' do %>
-    <%= scrivito_toggle_button_editor widget, :show_posts %>
-  <% end %>
+<%= scrivito_details_for t('scrivito_facebook_widget.details.show_posts', default: 'Show Posts') do %>
+  <%= scrivito_tag :div, widget, :show_posts %>
+<% end %>
 
-  <%= scrivito_details_for 'Hide cta' do %>
-    <%= scrivito_toggle_button_editor widget, :hide_cta %>
-  <% end %>
+<%= scrivito_details_for t('scrivito_facebook_widget.details.hide_cta', default: 'Hide CTA') do %>
+  <%= scrivito_tag :div, widget, :hide_cta %>
 <% end %>
