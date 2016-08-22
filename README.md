@@ -43,3 +43,4 @@ en:
       show_facepile: Show Facepile
       show_posts: Show Posts
       hide_cta: Hide CTA
+```
