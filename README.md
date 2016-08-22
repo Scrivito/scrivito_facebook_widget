@@ -37,9 +37,8 @@ en:
     details:
       type: type
       url: Url
-      type_options: More options with type page
-      max_width: 'Max Width (max: 500; min: 180)'
-      height: 'Height (min: 70)'
+      width: 'Max Width'
+      height: 'Height'
       hide_cover: Hide Cover
       show_facepile: Show Facepile
       show_posts: Show Posts
