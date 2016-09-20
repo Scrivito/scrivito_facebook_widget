@@ -1,1 +1,7 @@
-<%= render "facebook_widget/#{widget.type}", widget: widget %>
+<% if widget.type.present? && widget.url.present? %>
+  <%= render "facebook_widget/#{widget.type}", widget: widget %>
+<% else %>
+  <div class="alert alert-info">
+    <%= t('scrivito_facebook_widget.details.no_facebook_url', default: 'No type or url is present. Insert one in details view.') %>
+  </div>
+<% end %>
